@@ -1,0 +1,13 @@
+#logo {
+    float: right;
+}
+
+.disabled {
+    opacity: .5;
+}
+
+td span {
+    display: block;
+    text-align: center;
+    cursor: pointer;
+}

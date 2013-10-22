@@ -1,0 +1,22 @@
+<div class="well">
+    <table>
+        <tbody>
+            <tr>
+                <th>Rows</th>
+                <td><input type="number" min="1" max="10" ng-model="rows"></td>
+            </tr>
+            <tr>
+                <th>Cols</th>
+                <td><input type="number" min="1" max="10" ng-model="cols"></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p>{{time}}</p>
+<table class="table table-bordered">
+    <tbody>
+        <tr ng-repeat="row in getRange(rows)">
+            <td ng-repeat="col in getRange(cols)" ng-include="'app/game/number/number.tpl.html'"></td>
+        </tr>
+    </tbody>
+</table>
